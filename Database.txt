@@ -1,0 +1,11 @@
+Sir, suppose you want to retrieve data from a database, but you don’t want to manually write SQL queries. Instead, you simply describe what you need in natural language, and the system automatically generates and executes the query for you.
+
+In this situation, my SQL Database Assistant project becomes useful.
+
+I built a conversational interface using LangChain that converts natural language prompts into SQL queries dynamically. The Groq LLM is responsible for understanding the user’s request and generating schema-aware SQL statements.
+
+The system follows this pipeline: user input → schema injection into prompt → SQL generation → query validation → execution → formatted response.
+
+To ensure safety, I restricted execution to non-destructive queries like SELECT statements and added validation checks before running them.
+
+The interface was developed using Streamlit for real-time interaction.
