@@ -1,0 +1,13 @@
+
+I developed an autonomous multi-agent AI system that generates structured blog posts through coordinated agent collaboration.
+
+The core idea was to study how task decomposition and agent specialization improve content quality compared to single-LLM prompting.
+
+I implemented a multi-agent architecture using CrewAI, where separate agents were assigned roles such as researcher, content planner, and writer. The researcher agent used Serper.dev for real-time web search, while GPT-4o handled reasoning and natural language generation.
+
+The system followed a pipeline: research → outline generation → content drafting → refinement.
+
+I also built a Streamlit interface to allow users to control topic input and model parameters like temperature and max tokens.
+
+This project demonstrates structured orchestration of LLMs rather than relying on a single prompt-based approach
+
